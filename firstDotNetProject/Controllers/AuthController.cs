@@ -20,17 +20,6 @@ namespace firstDotNetProject.Controllers
             return await _users.CreateUser(userDTO);
         }
 
-        [HttpPost]
-        public async Task<IActionResult> login(LoginDTO loginDto)
-        {
-           return Ok(loginDto);
-        }
-
-        [HttpPost("blabla")]
-        public async Task<ActionResult<int>> sum([FromBody]int a, int b)
-        {
-            return Ok(a + b);
-        }
 
     }
 }
